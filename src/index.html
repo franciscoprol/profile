@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./assets/main.js"></script>
+</head>
+
+<body>
+
+  <!--SECTION: ABOUT-->
+  <div id="about" class="relative bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        
+        <!--LOGO & NAVBAR-->
+        <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+          fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+        <div>
+          <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+              <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                  <a href="https://franciscoprol.github.io/profile">
+                    <span class="sr-only">Francisco Prol</span>
+                    <img class="h-8 w-auto sm:h-10" src="./assets/home.png">
+                  </a>
+                </div>
+              </div>
+              <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                <a href="#about" class="font-medium text-gray-500 hover:text-gray-900">About</a>
+                <a href="#projects" class="font-medium text-gray-500 hover:text-gray-900">Projects</a>
+                <a href="#contact" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <!--PERSONAL DESCRIPTION-->
+        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <div class="sm:text-center lg:text-left">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <span class="block xl:inline">Francisco Prol</span>
+              <span class="block text-indigo-600 xl:inline">@franciscoprol</span>
+            </h1>
+            <p
+              class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              Industrial technical engineer specialized in Electrical and Electronic Engineering at the University of 
+              Seville. I'm interested in Embedded Software Development and Hardware Design, as well as Web Development.
+            </p>
+          </div>
+        </main>
+
+      </div>
+    </div>
+
+    <!--IMAGE-->
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+        src="./assets/profile-color.png"
+        alt="photo">
+    </div>
+
+  </div>
+
+  <!--SECTION: PROJECTS-->
+  <div id="projects" class="bg-white">
+    <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Projects</h1>
+
+        <div class="mt-10">
+          <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Motion detection and position detection using 3-axis accelerometers</h2>
+          <p class="mt-2 text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            Keywords: Accelerometer, distance measurement, FPGA, VHDL
+          </p>
+          <p class="text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            The present work aims to study and develop a method to measure the displacement of objects and determine their position. 
+            The proposed method consists of measuring the acceleration of an object, using a 3-axis accelerometer as a sensor, and 
+            applying a process to these data that allows obtaining the distance travelled. Once the displacement is obtained, knowing 
+            the initial position, the final position can be determined with relative ease. To make the system, a hardware design is 
+            developed in VHDL that is implemented on an FPGA.
+          </p>
+          <p class="text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            It is based on the hypothesis that the data obtained by the accelerometer will have sufficient quality to obtain good 
+            results once the processing has been carried out. Therefore, the first thing will be to test the hypothesis.
+          </p>
+          <p class="text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            To do this, a preliminary study is carried out, developing, firstly, a first hardware version of the first stage of the 
+            system that is responsible for data acquisition, and secondly, a first software version of the second stage of the system 
+            that is deals with data processing. After analysing the data of several measurements, at the output of the first stage and 
+            at the output of the second, it is concluded that the hypothesis is fulfilled, even if certain operating conditions are respected.
+          </p>
+          <p class="text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            Once the hypothesis has been validated, the final hardware versions of the first two stages are designed. Next, the third 
+            stage of the system is developed that allows the distance travelled to be displayed using a 7-segment display. After combining 
+            the three stages, a final version of the system is achieved that works as long as the restrictions are met. Finally, three 
+            applications for the system are developed and their operation is checked.
+          </p>
+          <p class="text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            <a href="https://idus.us.es/handle/11441/137774" class="font-medium text-indigo-500 hover:text-indigo-900">See more</a>
+          </p>
+          
+        </div>
+
+        <div class="mt-20">
+          <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Last YouTube Videos</h2>
+          <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="content">
+            <!-- content --><!--
+            <div class="group relative">
+                <div
+                    class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
+                    <img src="" alt="" class="w-full">
+                </div>
+                <div class="mt-4 flex justify-between">
+                    <h3 class="text-sm text-gray-700">
+                        <span aria-hidden="true" class="absolute inset-0"></span>
+                        title
+                    </h3>
+                </div>
+            </div>-->
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!--SECTION: CONTACT-->
+  <div id="contact" class="bg-gray-50">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <span class="block">Contact</span>
+        <span class="block text-indigo-600">keep in touch.</span>
+      </h2>
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+
+
+        <div class="flex flex-wrap items-center justify-center space-x-2">
+        <!--GitHub-->
+        <a href="https://github.com/franciscoprol">
+        <button
+            type="button"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+            style="background-color: #333">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+        </button>
+        </a>
+        
+        <!--Linkedin-->
+        <a href="https://www.linkedin.com/in/francisco-prol-050632196/">
+        <button
+            type="button"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+            style="background-color: #0077b5">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+            </svg>
+        </button>
+        </a>
+
+        <!--YouTube-->
+        <a href="https://www.youtube.com/@franciscoprol">
+        <button
+            type="button"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+            style="background-color: #ff0000">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+            </svg>
+        </button>
+        </a>
+
+        <!--Twitter--><!--
+        <a href="">
+        <button
+            type="button"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+            style="background-color: #1da1f2">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+        </button>
+        </a>-->
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
