@@ -1,3 +1,10 @@
+//import * as dotenv from 'dotenv'; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+//dotenv.config();
+
+//const API = process.env.API_URL;
+//console.log(API);
+
+
 const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCuP4RwXqZYAc9c4DxeCY7Rw&part=snippet%2Cid&order=date';
 
 const content = null || document.getElementById('content');
