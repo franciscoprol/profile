@@ -2,7 +2,7 @@
   "name": "profile",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "deploy": "gh-pages -d src"
   },
@@ -20,5 +20,8 @@
   "type": "module",
   "devDependencies": {
     "gh-pages": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }
